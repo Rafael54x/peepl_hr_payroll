@@ -3,7 +3,7 @@
 from odoo.tests import TransactionCase, tagged
 
 
-@tagged('post_install_l10n', 'post_install', '-at_install')
+@tagged('post_install', 'post_install', '-at_install')
 class TestWhitelistFromTemplate(TransactionCase):
 
     def setUp(self):
@@ -22,7 +22,7 @@ class TestWhitelistFromTemplate(TransactionCase):
 
         template = Version.create({
             'name': 'ID Template',
-            'l10n_id_bpjs_jkk': 2.5,
+            'id_bpjs_jkk': 2.5,
         })
 
         contract = self.employee_id.version_id

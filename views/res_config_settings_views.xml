@@ -10,8 +10,8 @@
                     <setting id="company_information" string="Company Information" help="Official Company Information" company_dependent="1">
                         <div class="mt16 content-group">
                             <div class="row ms-2">
-                                <label for="default_l10n_id_bpjs_jkk" class="col-md-6 p-0 m-0"/>
-                                <field name="default_l10n_id_bpjs_jkk" class="col-md-6 p-0" widget="percentage"/>
+                                <label for="default_id_bpjs_jkk" class="col-md-6 p-0 m-0"/>
+                                <field name="default_id_bpjs_jkk" class="col-md-6 p-0" widget="percentage"/>
                             </div>
                         </div>
                     </setting>

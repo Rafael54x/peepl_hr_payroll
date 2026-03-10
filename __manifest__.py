@@ -24,9 +24,6 @@
         "views/hr_payslip_views.xml",
         "views/hr_payslip_line_views.xml",
     ],
-    'demo': [
-        "data/peepl_hr_payroll_demo.xml"
-    ],
     'author': 'Peepl',
     'images': ['static/description/icon.png'],
     'website': 'https://peepl.tech',

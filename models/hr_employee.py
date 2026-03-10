@@ -6,7 +6,7 @@ from odoo import models
 class HrEmployee(models.Model):
     _inherit = "hr.employee"
 
-    def l10n_id_action_view_historical_lines(self):
+    def id_action_view_historical_lines(self):
         """ As the historical payslip line values of 'GROSS' and 'PPH21' is used to calculate
         for the end of year/contract payment, HR team likes to cross-check the values manually
 

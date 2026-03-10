@@ -1,124 +1,124 @@
 <?xml version='1.0' encoding='utf-8'?>
 <odoo>
-    <record id="l10n_id_hr_rule_parameter_bpjs_kesehatan" model="hr.rule.parameter">
+    <record id="id_hr_rule_parameter_bpjs_kesehatan" model="hr.rule.parameter">
         <field name="name">BPJS Kesehatan Threshold</field>
-        <field name="code">l10n_id_bpjs_salary_threshold</field>
+        <field name="code">id_bpjs_salary_threshold</field>
         <field name="country_id" ref="base.id"/>
     </record>
-    <record id="l10n_id_hr_rule_parameter_bpjs_kesehatan_2009" model="hr.rule.parameter.value">
+    <record id="id_hr_rule_parameter_bpjs_kesehatan_2009" model="hr.rule.parameter.value">
         <field name="parameter_value">12000000</field>
-        <field name="rule_parameter_id" ref="l10n_id_hr_rule_parameter_bpjs_kesehatan"/>
+        <field name="rule_parameter_id" ref="id_hr_rule_parameter_bpjs_kesehatan"/>
         <field name="date_from" eval="datetime(2009, 1, 1).date()"/>
     </record>
 
-    <record id="l10n_id_hr_rule_parameter_biaya_jabatan" model="hr.rule.parameter">
+    <record id="id_hr_rule_parameter_biaya_jabatan" model="hr.rule.parameter">
         <field name="name">Biaya Jabatan Threshold</field>
-        <field name="code">l10n_id_biaya_jabatan_salary_threshold</field>
+        <field name="code">id_biaya_jabatan_salary_threshold</field>
         <field name="country_id" ref="base.id"/>
     </record>
-    <record id="l10n_id_hr_rule_parameter_biaya_jabatan_2009" model="hr.rule.parameter.value">
+    <record id="id_hr_rule_parameter_biaya_jabatan_2009" model="hr.rule.parameter.value">
         <field name="parameter_value">10000000</field>
-        <field name="rule_parameter_id" ref="l10n_id_hr_rule_parameter_biaya_jabatan"/>
+        <field name="rule_parameter_id" ref="id_hr_rule_parameter_biaya_jabatan"/>
         <field name="date_from" eval="datetime(2009, 1, 1).date()"/>
     </record>
 
-    <record id="l10n_id_hr_rule_parameter_jht" model="hr.rule.parameter">
+    <record id="id_hr_rule_parameter_jht" model="hr.rule.parameter">
         <field name="name">JHT Threshold</field>
-        <field name="code">l10n_id_jht_threshold</field>
+        <field name="code">id_jht_threshold</field>
         <field name="country_id" ref="base.id"/>
     </record>
-    <record id="l10n_id_hr_rule_parameter_jht_2013" model="hr.rule.parameter.value">
+    <record id="id_hr_rule_parameter_jht_2013" model="hr.rule.parameter.value">
         <field name="parameter_value">9559600</field>
-        <field name="rule_parameter_id" ref="l10n_id_hr_rule_parameter_jht"/>
+        <field name="rule_parameter_id" ref="id_hr_rule_parameter_jht"/>
         <field name="date_from" eval="datetime(2013, 1, 1).date()"/>
     </record>
 
-    <record id="l10n_id_hr_rule_parameter_jp" model="hr.rule.parameter">
+    <record id="id_hr_rule_parameter_jp" model="hr.rule.parameter">
         <field name="name">JP Threshold</field>
-        <field name="code">l10n_id_jp_threshold</field>
+        <field name="code">id_jp_threshold</field>
         <field name="country_id" ref="base.id"/>
     </record>
-    <record id="l10n_id_hr_rule_parameter_jp_2015" model="hr.rule.parameter.value">
+    <record id="id_hr_rule_parameter_jp_2015" model="hr.rule.parameter.value">
         <field name="parameter_value">10042300</field>
-        <field name="rule_parameter_id" ref="l10n_id_hr_rule_parameter_jp"/>
+        <field name="rule_parameter_id" ref="id_hr_rule_parameter_jp"/>
         <field name="date_from" eval="datetime(2015, 1, 1).date()"/>
     </record>
 
-    <record id="l10n_id_hr_rule_parameter_bpjs_jkm_percentage" model="hr.rule.parameter">
+    <record id="id_hr_rule_parameter_bpjs_jkm_percentage" model="hr.rule.parameter">
         <field name="name">JKM Percentage</field>
-        <field name="code">l10n_id_jkm_percentage</field>
+        <field name="code">id_jkm_percentage</field>
         <field name="country_id" ref="base.id"/>
     </record>
-    <record id="l10n_id_hr_rule_parameter_bpjs_jkm_percentage_2015" model="hr.rule.parameter.value">
+    <record id="id_hr_rule_parameter_bpjs_jkm_percentage_2015" model="hr.rule.parameter.value">
         <field name="parameter_value">0.3</field>
-        <field name="rule_parameter_id" ref="l10n_id_hr_rule_parameter_bpjs_jkm_percentage"/>
+        <field name="rule_parameter_id" ref="id_hr_rule_parameter_bpjs_jkm_percentage"/>
         <field name="date_from" eval="datetime(2015, 1, 1).date()"/>
     </record>
 
-    <record id="l10n_id_hr_rule_parameter_alw_bpjs_kesehatan_percent" model="hr.rule.parameter">
+    <record id="id_hr_rule_parameter_alw_bpjs_kesehatan_percent" model="hr.rule.parameter">
         <field name="name">ALW BPJS Kesehatan Percentage</field>
-        <field name="code">l10n_id_alw_bpjs_kesehatan_percent</field>
+        <field name="code">id_alw_bpjs_kesehatan_percent</field>
         <field name="country_id" ref="base.id"/>
     </record>
-    <record id="l10n_id_hr_rule_parameter_alw_bpjs_kesehatan_percent_2013" model="hr.rule.parameter.value">
+    <record id="id_hr_rule_parameter_alw_bpjs_kesehatan_percent_2013" model="hr.rule.parameter.value">
         <field name="parameter_value">4</field>
-        <field name="rule_parameter_id" ref="l10n_id_hr_rule_parameter_alw_bpjs_kesehatan_percent"/>
+        <field name="rule_parameter_id" ref="id_hr_rule_parameter_alw_bpjs_kesehatan_percent"/>
         <field name="date_from" eval="datetime(2013, 1, 1).date()"/>
     </record>
 
-    <record id="l10n_id_hr_rule_parameter_biaya_jabatan_percent" model="hr.rule.parameter">
+    <record id="id_hr_rule_parameter_biaya_jabatan_percent" model="hr.rule.parameter">
         <field name="name">Biaya Jabatan Percentage</field>
-        <field name="code">l10n_id_biaya_jabatan_percent</field>
+        <field name="code">id_biaya_jabatan_percent</field>
         <field name="country_id" ref="base.id"/>
     </record>
-    <record id="l10n_id_hr_rule_parameter_biaya_jabatan_percent_2008" model="hr.rule.parameter.value">
+    <record id="id_hr_rule_parameter_biaya_jabatan_percent_2008" model="hr.rule.parameter.value">
         <field name="parameter_value">5</field>
-        <field name="rule_parameter_id" ref="l10n_id_hr_rule_parameter_biaya_jabatan_percent"/>
+        <field name="rule_parameter_id" ref="id_hr_rule_parameter_biaya_jabatan_percent"/>
         <field name="date_from" eval="datetime(2008, 1, 1).date()"/>
     </record>
 
-    <record id="l10n_id_hr_rule_parameter_jht_percent" model="hr.rule.parameter">
+    <record id="id_hr_rule_parameter_jht_percent" model="hr.rule.parameter">
         <field name="name">JHT Percentage</field>
-        <field name="code">l10n_id_jht_percent</field>
+        <field name="code">id_jht_percent</field>
         <field name="country_id" ref="base.id"/>
     </record>
-    <record id="l10n_id_hr_rule_parameter_jht_percent_2013" model="hr.rule.parameter.value">
+    <record id="id_hr_rule_parameter_jht_percent_2013" model="hr.rule.parameter.value">
         <field name="parameter_value">2</field>
-        <field name="rule_parameter_id" ref="l10n_id_hr_rule_parameter_jht_percent"/>
+        <field name="rule_parameter_id" ref="id_hr_rule_parameter_jht_percent"/>
         <field name="date_from" eval="datetime(2013, 1, 1).date()"/>
     </record>
 
-    <record id="l10n_id_hr_rule_parameter_ded_bpjs_kesehatan_percent" model="hr.rule.parameter">
+    <record id="id_hr_rule_parameter_ded_bpjs_kesehatan_percent" model="hr.rule.parameter">
         <field name="name">DED BPJS Kesehatan Percentage</field>
-        <field name="code">l10n_id_ded_bpjs_kesehatan_percent</field>
+        <field name="code">id_ded_bpjs_kesehatan_percent</field>
         <field name="country_id" ref="base.id"/>
     </record>
-    <record id="l10n_id_hr_rule_parameter_ded_bpjs_kesehatan_percent_2013" model="hr.rule.parameter.value">
+    <record id="id_hr_rule_parameter_ded_bpjs_kesehatan_percent_2013" model="hr.rule.parameter.value">
         <field name="parameter_value">1</field>
-        <field name="rule_parameter_id" ref="l10n_id_hr_rule_parameter_ded_bpjs_kesehatan_percent"/>
+        <field name="rule_parameter_id" ref="id_hr_rule_parameter_ded_bpjs_kesehatan_percent"/>
         <field name="date_from" eval="datetime(2013, 1, 1).date()"/>
     </record>
 
-    <record id="l10n_id_hr_rule_parameter_jp_percent" model="hr.rule.parameter">
+    <record id="id_hr_rule_parameter_jp_percent" model="hr.rule.parameter">
         <field name="name">JP Percentage</field>
-        <field name="code">l10n_id_jp_percent</field>
+        <field name="code">id_jp_percent</field>
         <field name="country_id" ref="base.id"/>
     </record>
-    <record id="l10n_id_hr_rule_parameter_jp_percent_2015" model="hr.rule.parameter.value">
+    <record id="id_hr_rule_parameter_jp_percent_2015" model="hr.rule.parameter.value">
         <field name="parameter_value">1</field>
-        <field name="rule_parameter_id" ref="l10n_id_hr_rule_parameter_jp_percent"/>
+        <field name="rule_parameter_id" ref="id_hr_rule_parameter_jp_percent"/>
         <field name="date_from" eval="datetime(2015, 1, 1).date()"/>
     </record>
 
     <!-- PPH percentage range
     forma: of parameter value: (lower_bound, upper_bound, percentage applied) -->
-    <record id="l10n_id_hr_rule_parameter_tax_percentage_pph21_a" model="hr.rule.parameter">
+    <record id="id_hr_rule_parameter_tax_percentage_pph21_a" model="hr.rule.parameter">
         <field name="name">PPH21 Rate: Category A</field>
-        <field name="code">l10n_id_pph21_percentage_a</field>
+        <field name="code">id_pph21_percentage_a</field>
         <field name="country_id" ref="base.id" />
     </record>
-    <record id="l10n_id_hr_rule_parameter_tax_percentage_a_2024" model="hr.rule.parameter.value">
-        <field name="rule_parameter_id" ref="l10n_id_hr_rule_parameter_tax_percentage_pph21_a"/>
+    <record id="id_hr_rule_parameter_tax_percentage_a_2024" model="hr.rule.parameter.value">
+        <field name="rule_parameter_id" ref="id_hr_rule_parameter_tax_percentage_pph21_a"/>
         <field name="date_from" eval="datetime(2024, 1, 1).date()"/>
         <field name="parameter_value">
             [
@@ -170,13 +170,13 @@
         </field>
     </record>
 
-    <record id="l10n_id_hr_rule_parameter_tax_percentage_pph21_b" model="hr.rule.parameter">
+    <record id="id_hr_rule_parameter_tax_percentage_pph21_b" model="hr.rule.parameter">
         <field name="name">PPH21 Rate: Category B</field>
-        <field name="code">l10n_id_pph21_percentage_b</field>
+        <field name="code">id_pph21_percentage_b</field>
         <field name="country_id" ref="base.id" />
     </record>
-    <record id="l10n_id_hr_rule_parameter_tax_percentage_b_2024" model="hr.rule.parameter.value">
-        <field name="rule_parameter_id" ref="l10n_id_hr_rule_parameter_tax_percentage_pph21_b"/>
+    <record id="id_hr_rule_parameter_tax_percentage_b_2024" model="hr.rule.parameter.value">
+        <field name="rule_parameter_id" ref="id_hr_rule_parameter_tax_percentage_pph21_b"/>
         <field name="date_from" eval="datetime(2024, 1, 1).date()"/>
         <field name="parameter_value">
             [
@@ -224,13 +224,13 @@
         </field>
     </record>
 
-    <record id="l10n_id_hr_rule_parameter_tax_percentage_pph21_c" model="hr.rule.parameter">
+    <record id="id_hr_rule_parameter_tax_percentage_pph21_c" model="hr.rule.parameter">
         <field name="name">PPH21 Rate: Category C</field>
-        <field name="code">l10n_id_pph21_percentage_c</field>
+        <field name="code">id_pph21_percentage_c</field>
         <field name="country_id" ref="base.id" />
     </record>
-    <record id="l10n_id_hr_rule_parameter_tax_percentage_c_2024" model="hr.rule.parameter.value">
-        <field name="rule_parameter_id" ref="l10n_id_hr_rule_parameter_tax_percentage_pph21_c"/>
+    <record id="id_hr_rule_parameter_tax_percentage_c_2024" model="hr.rule.parameter.value">
+        <field name="rule_parameter_id" ref="id_hr_rule_parameter_tax_percentage_pph21_c"/>
         <field name="date_from" eval="datetime(2024, 1, 1).date()"/>
         <field name="parameter_value">
             [

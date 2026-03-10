@@ -6,8 +6,8 @@ from odoo import api, fields, models
 class HrVersion(models.Model):
     _inherit = "hr.version"
 
-    l10n_id_bpjs_jkk = fields.Float(string="BPJS JKK", groups="hr.group_hr_user")
-    l10n_id_kode_ptkp = fields.Selection(
+    id_bpjs_jkk = fields.Float(string="BPJS JKK", groups="hr.group_hr_user")
+    id_kode_ptkp = fields.Selection(
         selection=[
             ('tk0', "TK/0"),
             ('tk1', "TK/1"),
@@ -28,6 +28,6 @@ class HrVersion(models.Model):
         whitelisted_fields = super()._get_whitelist_fields_from_template() or []
         if self.env.company.country_id.code == "ID":
             whitelisted_fields += [
-                'l10n_id_bpjs_jkk',
+                'id_bpjs_jkk',
             ]
         return whitelisted_fields
