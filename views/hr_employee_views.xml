@@ -27,17 +27,7 @@
             </xpath>
             <page name="tax_information" position="after">
                 <page name="salary_information" string="Salary Information">
-                    <group>
-                        <field name="salary_structure_line_ids" nolabel="1">
-                            <list string="Salary Computation" decoration-info="category_id.code == 'ALW'" decoration-warning="category_id.code == 'DED'" decoration-success="category_id.code == 'BASIC'">
-                                <field name="sequence" widget="handle"/>
-                                <field name="name"/>
-                                <field name="code"/>
-                                <field name="category_id"/>
-                                <field name="amount" sum="Total"/>
-                            </list>
-                        </field>
-                    </group>
+                    
                 </page>
             </page>
             </field>
