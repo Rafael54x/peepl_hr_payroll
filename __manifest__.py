@@ -1,5 +1,6 @@
 {
     'name': 'Peepl - Payroll',
+    'countries': ['id'],
     'category': 'Human Resources/Payroll',
     'description': """
         Peepl Payroll Rules.

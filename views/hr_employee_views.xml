@@ -5,15 +5,41 @@
         <field name="model">hr.employee</field>
         <field name="inherit_id" ref="hr_payroll.payroll_hr_employee_view_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//header" position="inside">
-                <button name="id_action_view_historical_lines" type="object" groups="hr_payroll.group_hr_payroll_user" string="View GROSS/PPH21 History" invisible="country_code != 'ID'"/>
+            <page name="payroll_information" position="after">
+                <page name="tax_information" string="Tax Information">
+                    <button name="id_action_view_historical_lines" type="object" groups="hr_payroll.group_hr_payroll_user" string="View GROSS/PPH21 History" invisible="country_code != 'ID'"/>
+                    <group string="Indonesian Payroll" invisible="company_country_code != 'ID'">
+                        <field name="has_npwp"/>
+                        <field name="npwp" invisible="not has_npwp"/>
+                        <field name="id_kode_ptkp" class="o_hr_narrow_field"/>
+                        <field name="id_bpjs_jkk" widget="percentage" class="o_hr_percentage_narrow_field"/>
+                    </group>
+                </page>
+            </page>
+            <xpath expr="//group[@name='citizenship']" position="inside">
+                <field name="identification_id" string="NIK"/>
             </xpath>
-            <group name="payroll_group" position="inside">
-                <group string="Indonesian Payroll" invisible="company_country_code != 'ID'">
-                    <field name="id_kode_ptkp" class="o_hr_narrow_field"/>
-                    <field name="id_bpjs_jkk" widget="percentage" class="o_hr_percentage_narrow_field"/>
-                </group>
-            </group>
-        </field>
+            <xpath expr="//group[@name='citizenship']//field[@name='identification_id'][1]" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//group[@name='citizenship']//field[@name='ssnid']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <page name="tax_information" position="after">
+                <page name="salary_information" string="Salary Information">
+                    <group>
+                        <field name="salary_structure_line_ids" nolabel="1">
+                            <list string="Salary Computation" decoration-info="category_id.code == 'ALW'" decoration-warning="category_id.code == 'DED'" decoration-success="category_id.code == 'BASIC'">
+                                <field name="sequence" widget="handle"/>
+                                <field name="name"/>
+                                <field name="code"/>
+                                <field name="category_id"/>
+                                <field name="amount" sum="Total"/>
+                            </list>
+                        </field>
+                    </group>
+                </page>
+            </page>
+            </field>
     </record>
 </odoo>

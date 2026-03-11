@@ -6,6 +6,8 @@ from odoo import api, fields, models
 class HrVersion(models.Model):
     _inherit = "hr.version"
 
+    has_npwp = fields.Boolean(string="Has NPWP", groups="hr.group_hr_user")
+    npwp = fields.Char(string="NPWP", groups="hr.group_hr_user")
     id_bpjs_jkk = fields.Float(string="BPJS JKK", groups="hr.group_hr_user")
     id_kode_ptkp = fields.Selection(
         selection=[
